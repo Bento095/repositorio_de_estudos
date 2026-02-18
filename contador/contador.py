@@ -1,5 +1,5 @@
 def limpar_texto(frase):
-    texto = texto.lower()
+    texto = frase.lower()
     caracteres = "!@#$%^&*()_+-=~`[]{}|;:'\",.<>/?"
     for char in caracteres:
         texto = texto.replace(char, "")
@@ -19,4 +19,4 @@ def contar_palavras(frase):
     contagem = {}
     for palavra in palavras:
         contagem[palavra] = contagem.get(palavra, 0) + 1
-        return contagem
+    return contagem
